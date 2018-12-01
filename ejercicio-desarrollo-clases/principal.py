@@ -20,11 +20,11 @@ lista = lista[1:6]
 
 listaNueva = []  			
 
-#Separamos cada linea de la lista con el simbolo ~ utilizando el split, reemplazamos los \n con unas '' para que de esta forma se elimine
+#Separamos cada linea de la lista con el simbolo | utilizando el split, reemplazamos los \n con unas '' para que de esta forma se elimine
 # por ultimo agregamos cada elemento a la nueva lista
 
 for linea in lista:
-	linea = linea.split("~")               
+	linea = linea.split("|")               
 	linea[3] = linea[3].replace('\n', '')
 	listaNueva.append(linea)
 
